@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: darkgray;
+}
+
+.btnGradient {
+  background: linear-gradient(
+    87.82deg,
+    #4d91ff -12.76%,
+    #b14bf4 49.54%,
+    #fa5560 117.03%
+  );
+}
+
+.btnText {
+  height: 60px;
+  width: 100%;
+  font-size: 24px;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+}
+
+.textGradient {
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#login {
+  background: url(./img/login-back.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#login-sidebar {
+  width: 577px;
+  background: linear-gradient(
+    338.23deg,
+    #12071a 3.52%,
+    #020202 48.39%,
+    #030a14 100%
+  );
+}
+@media only screen and (max-width: 1024px) {
+  #login-sidebar {
+    width: 100%;
+  }
+}
+
+#login-sidebar > #logeSection :first-child {
+  width: 144px;
+  height: 144px;
+  background: url(./img/logo.svg) no-repeat center center;
+}
+
+#login-sidebar > #logeSection :nth-child(2) {
+  color: #8d8d8d;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
